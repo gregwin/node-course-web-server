@@ -32,6 +32,12 @@ app.get('/bad', (req, res) => {
 		error : 'Could not handle this request'
 	});
 });
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Projects'
+		,welcomeMessage: 'This is a welcome message'
+	});
+});
 
 
 app.listen(port,() => {
